@@ -1,23 +1,28 @@
 
 html {
 	height: 100%;
+
 }
 
+
+
 .main{
-	background-color: #222222;
+
 	padding-bottom: 3em;
 	color:red;
 	text-align: center;
   padding-top: 3em;
+    background-image: linear-gradient(black, grey);
 }
 
 .links{
-	background-color: #222222;
+	background-image: linear-gradient(grey, black);
 	padding-bottom: 3em;
-	color:red;
-  text-align: center;
+	color:yellow;
+    text-align: center;
 	padding-top: 3em;
-  padding-bottom: 3em;
+    padding-bottom: 3em;
+    
 }
 
 .pelis {
@@ -27,15 +32,22 @@ html {
 	margin-top: 5%;
 	border-radius:8px;
 	margin:0 auto;
-	padding:20px 30px;
+	padding:30px 30px;
 	font-family: 'Open Sans Condensed', sans-serif;
 	position: relative;
 	min-width: 520px;
 }
 
+
 .pelis h1 {
- text-align: center;
- padding-top: 1em;
+    text-align: center;
+    width: 70%;
+    border: 5px solid gray;
+    background-color: darkgray;
+    font-family: fantasy;
+    margin: auto;
+    border-radius: 15px;
+    padding: 5px;
 }
 
 .pelis p {
@@ -89,7 +101,7 @@ hr {
    float:left;
    margin:0;
    padding: 0;
-   border-bottom:1px solid #000; /* black line below menu */
+    /* black line below menu */
    width:100%;
    font-family:Verdana, Geneva, sans-serif; /* Menu font */
    font-size:90%; /* Menu text size */
@@ -128,7 +140,7 @@ hr {
    text-decoration:none;
    color:#444;
    font-weight:bold;
-   border-bottom:1px solid #000;
+   
 }
 #centeredmenu ul li.active a {
    color:#fff;
@@ -137,13 +149,13 @@ hr {
 #centeredmenu ul li a:hover {
    background:#000; /* Top menu items background colour */
    color:#fff;
-   border-bottom:1px solid #000;
+   
 }
 #centeredmenu ul li:hover a,
 #centeredmenu ul li.hover a { /* This line is required for IE 6 and below */
    background:#000; /* Top menu items background colour */
    color:#fff;
-   border-bottom:1px solid #000;
+   
 }
 
 /* Submenu items */
@@ -169,7 +181,7 @@ hr {
    font-weight:normal; /* resets the bold set for the top level menu items */
    background:#eee;
    color:#444;
-   line-height:1.4em; /* overwrite line-height value from top menu */
+    /* overwrite line-height value from top menu */
    border-bottom:1px solid #ddd; /* sub menu item horizontal lines */
 }
 #centeredmenu ul ul li a:hover,
@@ -194,7 +206,7 @@ hr {
 
 	/* CSS de irina */
 	body {
-	  background:#222222;
+	  background:grey;
 	  margin:0 auto;
 	}
 
@@ -307,3 +319,32 @@ hr {
 	a:hover {
 	 color: lightgrey;
 	}
+    a{
+        color: yellow;
+    }
+    
+.overlay {
+  position: absolute; 
+  bottom: 0; 
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); 
+  color: #f1f1f1; 
+  width: 60%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+  margin: 0;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.container {
+  position: relative;
+
+
+}
