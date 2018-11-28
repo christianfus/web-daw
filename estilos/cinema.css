@@ -14,9 +14,6 @@ html {
 	height: 100%;
 
 }
-
-
-
 .main{
 
 	padding-bottom: 3em;
@@ -254,7 +251,6 @@ hr {
 
 	.form {
 	  width:40%;
-	  height:85%;
 	  background:#e6e6e6;
 	  margin-top: 5%;
 	  border-radius:8px;
@@ -270,8 +266,8 @@ hr {
 	  padding-bottom:10px;
 	  margin-left: 10%;
 	  width:80%;
-	  color:#78788c;
-	  border-bottom:3px solid #78788c;
+	  color:#3B3535;
+	  border-bottom:3px solid #3B3535;
 	}
 
 	input {
@@ -296,7 +292,7 @@ hr {
 	  display:block;
 	  margin:28px 0 0;
 	  font-size:20px;
-	  color:#5a5a5a
+	  color:#3B3535;
 	}
 
 	button {
@@ -318,7 +314,7 @@ hr {
 
 	.spans {
 	  position:absolute;
-	  bottom:-55px;
+	  bottom:-10px;
 	  right:-100px;
 	  background:#50505a;
 	  color:#fff;
@@ -386,6 +382,4 @@ hr {
 
 .container {
   position: relative;
-
-
 }
