@@ -1,11 +1,19 @@
+/*
+Fuente que imita la máquina de escribir:
+font-family: 'Slabo 27px', serif;
+
+Fuente para los resúmenes de las películas y textos
+font-family: 'Quicksand', sans-serif;
+
+Fuente para los TOPS y titulares:
+font-family: 'Abril Fatface', cursive;
+*/
+
 
 html {
 	height: 100%;
 
 }
-
-
-
 .main{
 
 	padding-bottom: 3em;
@@ -22,14 +30,13 @@ html {
     text-align: center;
 	padding-top: 3em;
     padding-bottom: 3em;
-    
+
 }
 
 .pelis {
 	width:60%;
 	height:auto;
 	background:#e6e6e6;
-	margin-top: 5%;
 	border-radius:8px;
 	margin:0 auto;
 	padding:30px 30px;
@@ -37,33 +44,60 @@ html {
 	position: relative;
 	min-width: 520px;
 }
+.image_resume {
+	float: left;
+	overflow: auto;
+}
 
 
 .pelis h1 {
     text-align: center;
     width: 70%;
-    border: 5px solid gray;
-    background-color: darkgray;
     font-family: fantasy;
     margin: auto;
-    border-radius: 15px;
+   
     padding: 5px;
 }
 
 .pelis p {
-	padding-bottom: 3em;
+	float: left;
+	vertical-align: middle;
+}
+
+.clearfix h3 {
+	text-align: center;
+	font-family: 'Quicksand', sans-serif;
+}
+
+.clearfix {
+	overflow: auto;
+	text-align: justify;
+	font-family: 'Quicksand', sans-serif;
+
 }
 
 .pelis h2{
 	padding-top: 2em;
 	text-align: center;
+	font-family: 'Quicksand', sans-serif;
 }
+
+.pelis-info h3 {
+	text-align: center;
+	font-family: 'Quicksand', sans-serif;
+}
+
 
 .pelis iframe{
 	width: 90%;
 	height: 50%;
 	margin: 30 auto;
 	display: block;
+}
+
+.critica {
+	font-family: 'Slabo 27px', serif;
+	font-size: 15px;
 }
 
 img{
@@ -103,7 +137,7 @@ hr {
    padding: 0;
     /* black line below menu */
    width:100%;
-   font-family:Verdana, Geneva, sans-serif; /* Menu font */
+   	font-family: 'Quicksand', sans-serif; /* Menu font */
    font-size:90%; /* Menu text size */
    z-index:1000; /* This makes the dropdown menus appear above the page content below */
    position:relative;
@@ -140,7 +174,8 @@ hr {
    text-decoration:none;
    color:#444;
    font-weight:bold;
-   
+   border-bottom:1px solid #000;
+	 	font-family: 'Quicksand', sans-serif;
 }
 #centeredmenu ul li.active a {
    color:#fff;
@@ -149,13 +184,13 @@ hr {
 #centeredmenu ul li a:hover {
    background:#000; /* Top menu items background colour */
    color:#fff;
-   
+
 }
 #centeredmenu ul li:hover a,
 #centeredmenu ul li.hover a { /* This line is required for IE 6 and below */
    background:#000; /* Top menu items background colour */
    color:#fff;
-   
+
 }
 
 /* Submenu items */
@@ -213,7 +248,6 @@ hr {
 
 	.form {
 	  width:40%;
-	  height:85%;
 	  background:#e6e6e6;
 	  margin-top: 5%;
 	  border-radius:8px;
@@ -229,8 +263,10 @@ hr {
 	  padding-bottom:10px;
 	  margin-left: 10%;
 	  width:80%;
-	  color:#78788c;
-	  border-bottom:3px solid #78788c;
+	  color:#3B3535;
+	  border-bottom:3px solid #3B3535;
+      font-family: 'Quicksand', sans-serif;
+      
 	}
 
 	input {
@@ -255,7 +291,7 @@ hr {
 	  display:block;
 	  margin:28px 0 0;
 	  font-size:20px;
-	  color:#5a5a5a
+	  color:#3B3535;
 	}
 
 	button {
@@ -277,11 +313,11 @@ hr {
 
 	.spans {
 	  position:absolute;
-	  bottom:-55px;
+	  bottom:-10px;
 	  right:-100px;
 	  background:#50505a;
 	  color:#fff;
-	  width:230px;
+	  width:250px;
 	  padding:16px 4px 16px 0;
 	  border-radius:6px;
 	  font-size:13px;
@@ -322,13 +358,14 @@ hr {
     a{
         color: yellow;
     }
-    
+
+/* HOVER MENU INDEX*/
 .overlay {
-  position: absolute; 
-  bottom: 0; 
+  position: absolute;
+  bottom: 0;
   background: rgb(0, 0, 0);
-  background: rgba(0, 0, 0, 0.5); 
-  color: #f1f1f1; 
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
   width: 60%;
   transition: .5s ease;
   opacity:0;
@@ -337,14 +374,55 @@ hr {
   padding: 20px;
   text-align: center;
   margin: 0;
+  left:12px;
 }
 
 .container:hover .overlay {
   opacity: 1;
+  left: 12%;
 }
 
 .container {
   position: relative;
 
+}
 
+/* LATERAL DIV INDEX */
+
+.lateraldivizq{
+    width:13%;
+    height: 500px;
+	background:#e6e6e6;
+    position: absolute;
+	border-radius:8px;
+    top: 260px;
+    left: 3%;
+
+	font-family: 'Open Sans Condensed', sans-serif;
+
+}
+
+.lateraldivdre{
+    width:13%;
+    height: 500px;
+	background:#e6e6e6;
+    position: absolute;
+	border-radius:8px;
+    top: 260px;
+    left: 84%;
+
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.noticias img{
+    width: 80%;
+    padding-bottom: 40px;
+}
+
+.noticias b{
+    color: #3B3535;
+    width: 3em;
+    top: 200px;
+    font-family: 'Quicksand', sans-serif;
+    padding: 15px;
 }
