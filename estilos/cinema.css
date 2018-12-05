@@ -37,7 +37,6 @@ html {
 	width:60%;
 	height:auto;
 	background:#e6e6e6;
-	margin-top: 5%;
 	border-radius:8px;
 	margin:0 auto;
 	padding:30px 30px;
@@ -54,11 +53,9 @@ html {
 .pelis h1 {
     text-align: center;
     width: 70%;
-    border: 5px solid gray;
-    background-color: darkgray;
     font-family: fantasy;
     margin: auto;
-    border-radius: 15px;
+
     padding: 5px;
 }
 
@@ -268,6 +265,8 @@ hr {
 	  width:80%;
 	  color:#3B3535;
 	  border-bottom:3px solid #3B3535;
+      font-family: 'Quicksand', sans-serif;
+
 	}
 
 	input {
@@ -360,6 +359,7 @@ hr {
         color: yellow;
     }
 
+/* HOVER MENU INDEX*/
 .overlay {
   position: absolute;
   bottom: 0;
@@ -374,12 +374,55 @@ hr {
   padding: 20px;
   text-align: center;
   margin: 0;
+  left:12px;
 }
 
 .container:hover .overlay {
   opacity: 1;
+  left: 12%;
 }
 
 .container {
   position: relative;
+
+}
+
+/* LATERAL DIV INDEX */
+
+.lateraldivizq{
+    width:13%;
+    height: 500px;
+	background:#e6e6e6;
+    position: absolute;
+	border-radius:8px;
+    top: 260px;
+    left: 3%;
+
+	font-family: 'Open Sans Condensed', sans-serif;
+
+}
+
+.lateraldivdre{
+    width:13%;
+    height: 500px;
+	background:#e6e6e6;
+    position: absolute;
+	border-radius:8px;
+    top: 260px;
+    left: 84%;
+
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.noticias img{
+    width: 80%;
+    padding-bottom: 40px;
+}
+
+.noticias b{
+    color: #3B3535;
+    width: 3em;
+    top: 200px;
+    font-family: 'Quicksand', sans-serif;
+    padding: 15px;
 }
