@@ -19,22 +19,22 @@ html {
 	padding-bottom: 3em;
 	color:red;
 	text-align: center;
-  padding-top: 3em;
-    background-image: linear-gradient(black, grey);
+	padding-top: 3em;
+	background-image: linear-gradient(black, grey);
 }
 
 .links{
 	background-image: linear-gradient(grey, black);
 	padding-bottom: 3em;
 	color:yellow;
-    text-align: center;
+	text-align: center;
 	padding-top: 3em;
-    padding-bottom: 3em;
+	padding-bottom: 3em;
 
 }
 
 .pelis {
-	width:60%;
+	width:50%;
 	height:auto;
 	background:#e6e6e6;
 	border-radius:8px;
@@ -51,12 +51,12 @@ html {
 
 
 .pelis h1 {
-    text-align: center;
-    width: 70%;
-    font-family: fantasy;
-    margin: auto;
-
-    padding: 5px;
+	text-align: center;
+	width: 70%;
+	font-family: fantasy;
+	margin: auto;
+	padding: 5px;
+	font-size: 30px;
 }
 
 .pelis p {
@@ -101,10 +101,10 @@ html {
 }
 
 img{
-    margin-left: auto;
-    margin-right: auto;
-    width: 200px;
-    padding: 12px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 200px;
+	padding: 12px;
 }
 
 #logo {
@@ -112,317 +112,320 @@ img{
 }
 
 hr {
-	width: 60%;
+	width: 50%;
 	margin: 0 auto;
 }
 
 
 * {
-		font-family: arial;
-	}
+	font-family: arial;
+}
 
 
-	ul, ol {
-		list-style:none;
-		margin: 0 auto;
-		width: 50%;
-		padding: 10px;
-	}
+ul, ol {
+	list-style:none;
+	margin: 0 auto;
+	width: 50%;
+	padding: 10px;
+}
 
 /*Centered Menu*/
-	#centeredmenu {
-   clear:both;
-   float:left;
-   margin:0;
-   padding: 0;
-    /* black line below menu */
-   width:100%;
-   	font-family: 'Quicksand', sans-serif; /* Menu font */
-   font-size:90%; /* Menu text size */
-   z-index:1000; /* This makes the dropdown menus appear above the page content below */
-   position:relative;
+#centeredmenu {
+	clear:both;
+	float:left;
+	margin:0;
+	padding: 0;
+	/* black line below menu */
+	width:100%;
+	font-family: 'Quicksand', sans-serif; /* Menu font */
+	font-size:90%; /* Menu text size */
+	z-index:1000; /* This makes the dropdown menus appear above the page content below */
+	position:relative;
 }
 
 /* Top menu items */
 #centeredmenu ul {
-   margin:0 auto;
-   padding:0;
-   list-style:none;
-   float: left;
-   position:relative;
-   /* right:50%; */
-   /* padding-left: 33%; */
-   margin-left: 25%;
+	margin:0 auto;
+	padding:0;
+	list-style:none;
+	float: left;
+	position:relative;
+	/* right:50%; */
+	/* padding-left: 33%; */
+	margin-left: 25%;
 }
 #centeredmenu ul li {
-   margin:0 0 0 1px;
-   padding:0;
-   float:left;
-   /* position:relative; */
-   /* left: 61%; */
-   top:1px;
-   width: 24.5%;
-   min-width: 100px;
+	margin:0 0 0 1px;
+	padding:0;
+	float:left;
+	/* position:relative; */
+	/* left: 61%; */
+	top:1px;
+	width: 24.5%;
+	min-width: 100px;
 }
 #centeredmenu ul li a {
-   display:block;
-   margin:0;
-   padding:.6em .5em .4em;
-   font-size:1em;
-   line-height:1em;
-   background:#ddd;
-   text-decoration:none;
-   color:#444;
-   font-weight:bold;
-   border-bottom:1px solid #000;
-	 	font-family: 'Quicksand', sans-serif;
+	display:block;
+	margin:0;
+	padding:.6em .5em .4em;
+	font-size:1em;
+	line-height:1em;
+	background:#ddd;
+	text-decoration:none;
+	color:#444;
+	font-weight:bold;
+	border-bottom:1px solid #000;
+	font-family: 'Quicksand', sans-serif;
 }
 #centeredmenu ul li.active a {
-   color:#fff;
-   background:#000;
+	color:#fff;
+	background:#000;
 }
 #centeredmenu ul li a:hover {
-   background:#000; /* Top menu items background colour */
-   color:#fff;
+	background:#000; /* Top menu items background colour */
+	color:#fff;
 
 }
 #centeredmenu ul li:hover a,
 #centeredmenu ul li.hover a { /* This line is required for IE 6 and below */
-   background:#000; /* Top menu items background colour */
-   color:#fff;
+	background:#000; /* Top menu items background colour */
+	color:#fff;
 
 }
 
 /* Submenu items */
 #centeredmenu ul ul {
-   display:none; /* Sub menus are hiden by default */
-   position:absolute;
-   top:2em;
-   left:0;
-   right:auto; /*resets the right:50% on the parent ul */
-   width:10em; /* width of the drop-down menus */
+	display:none; /* Sub menus are hiden by default */
+	position:absolute;
+	top:2em;
+	left:0;
+	right:auto; /*resets the right:50% on the parent ul */
+	width:10em; /* width of the drop-down menus */
 }
 #centeredmenu ul ul li {
-   left:auto;  /*resets the left:50% on the parent li */
-   margin:0; /* Reset the 1px margin from the top menu */
-   clear:left;
-   width:100%;
+	left:auto;  /*resets the left:50% on the parent li */
+	margin:0; /* Reset the 1px margin from the top menu */
+	clear:left;
+	width:100%;
 }
 #centeredmenu ul ul li a,
 #centeredmenu ul li.active li a,
 #centeredmenu ul li:hover ul li a,
 #centeredmenu ul li.hover ul li a { /* This line is required for IE 6 and below */
-   font-size:.8em;
-   font-weight:normal; /* resets the bold set for the top level menu items */
-   background:#eee;
-   color:#444;
-    /* overwrite line-height value from top menu */
-   border-bottom:1px solid #ddd; /* sub menu item horizontal lines */
+	font-size:0.95em;
+	font-weight:normal; /* resets the bold set for the top level menu items */
+	background:#eee;
+	color:#444;
+	/* overwrite line-height value from top menu */
+	border-bottom:1px solid #ddd; /* sub menu item horizontal lines */
 }
+
 #centeredmenu ul ul li a:hover,
 #centeredmenu ul li.active ul li a:hover,
 #centeredmenu ul li:hover ul li a:hover,
 #centeredmenu ul li.hover ul li a:hover { /* This line is required for IE 6 and below */
-   background:#000; /* Sub menu items background colour */
-   color:#fff;
+	background:#000; /* Sub menu items background colour */
+	color:#fff;
 }
 
 /* Flip the last submenu so it stays within the page */
 #centeredmenu ul ul.last {
-   left:auto; /* reset left:0; value */
-   right:0; /* Set right value instead */
+	left:auto; /* reset left:0; value */
+	right:0; /* Set right value instead */
 }
 
 /* Make the sub menus appear on hover */
 #centeredmenu ul li:hover ul,
 #centeredmenu ul li.hover ul { /* This line is required for IE 6 and below */
-   display:block; /* Show the sub menus */
+	display:block; /* Show the sub menus */
 }
 
-	/* CSS de irina */
-	body {
-	  background:grey;
-	  margin:0 auto;
-	}
+/* CSS de irina */
+body {
+	background:grey;
+	margin:0 auto;
+}
 
 
-	.form {
-	  width:40%;
-	  background:#e6e6e6;
-	  margin-top: 5%;
-	  border-radius:8px;
-	  margin:0 auto;
-	  padding:20px 30px;
-	  box-sizing:border-box;
-	  font-family: 'Open Sans Condensed', sans-serif;
-	  position: relative;
-	}
+.form {
+	width:40%;
+	background:#e6e6e6;
+	margin-top: 5%;
+	border-radius:8px;
+	margin:0 auto;
+	padding:20px 30px;
+	box-sizing:border-box;
+	font-family: 'Open Sans Condensed', sans-serif;
+	position: relative;
+}
 
-	h2 {
-	  text-align: center;
-	  padding-bottom:10px;
-	  margin-left: 10%;
-	  width:80%;
-	  color:#3B3535;
-	  border-bottom:3px solid #3B3535;
-      font-family: 'Quicksand', sans-serif;
+h2 {
+	text-align: center;
+	padding-bottom:10px;
+	margin-left: 10%;
+	width:80%;
+	color:#3B3535;
+	border-bottom:3px solid #3B3535;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 20px;
 
-	}
+}
 
-	input {
-	  width:100%;
-	  padding:10px;
-	  box-sizing:border-box;
-	  background:none;
-	  outline:none;
-	  resize:none;
-	  border:0;
-	  font-family:'Montserrat',sans-serif;
-	  transition:all .3s;
-	  border-bottom:2px solid #bebed2;
-	}
+input {
+	width:100%;
+	padding:10px;
+	box-sizing:border-box;
+	background:none;
+	outline:none;
+	resize:none;
+	border:0;
+	font-family:'Montserrat',sans-serif;
+	transition:all .3s;
+	border-bottom:2px solid #bebed2;
+}
 
-	input:focus {
-	  border-bottom:2px solid #78788c;
-	}
+input:focus {
+	border-bottom:2px solid #78788c;
+}
 
-	p:before {
-	  content:attr(type);
-	  display:block;
-	  margin:28px 0 0;
-	  font-size:20px;
-	  color:#3B3535;
-	}
+p:before {
+	content:attr(type);
+	display:block;
+	margin:28px 0 0;
+	font-size:20px;
+	color:#3B3535;
+}
 
-	button {
-	  padding:8px 12px;
-	  width: 20%;
-	  margin-left:40%;
-	  border:2px solid #78788c;
-	  background: 0;
-	  color:#5a5a6e;
-	  cursor:pointer;
-	  transition:all .3s;
-	  font-family: 'Open Sans Condensed', sans-serif;
-	}
+button {
+	padding:8px 12px;
+	width: 20%;
+	margin-left:40%;
+	border:2px solid #78788c;
+	background: 0;
+	color:#5a5a6e;
+	cursor:pointer;
+	transition:all .3s;
+	font-family: 'Open Sans Condensed', sans-serif;
+}
 
-	button:hover {
-	  background:#78788c;
-	  color:#fff;
-	}
+button:hover {
+	background:#78788c;
+	color:#fff;
+}
 
-	.spans {
-	  position:absolute;
-	  bottom:-10px;
-	  right:-100px;
-	  background:#50505a;
-	  color:#fff;
-	  width:250px;
-	  padding:16px 4px 16px 0;
-	  border-radius:6px;
-	  font-size:13px;
-	  box-shadow:10px 10px 40px -14px #000;
-	}
+.spans {
+	position:absolute;
+	bottom:-10px;
+	right:-100px;
+	background:#50505a;
+	color:#fff;
+	width:250px;
+	padding:16px 4px 16px 0;
+	border-radius:6px;
+	font-size:13px;
+	box-shadow:10px 10px 40px -14px #000;
+}
 
-	span {
-	  margin:0 5px 0 15px;
-	}
+span {
+	margin:0 5px 0 15px;
+}
 
-	footer {
+footer {
 	align-items: baseline;
-	}
+}
 
-	footer div.icons {
+footer div.icons {
 	overflow: hidden;
 	padding-bottom: 4px;
 	text-align: center;
-	}
-	i {
+}
+i {
 	color: #FFFFCC;
-	}
+}
 
-	footer div.icons li {
+footer div.icons li {
 	display: inline;
 	margin: 0;
 	padding: 0;
-	}
-	footer div.icons a {
+}
+footer div.icons a {
 	display: inline-block;
 	font-size: 50px;
 	padding: 20px;
 	width: 90px;
-	}
-	a:hover {
-	 color: lightgrey;
-	}
-    a{
-        color: yellow;
-    }
+}
+a:hover {
+	color: lightgrey;
+}
+a{
+	color: yellow;
+}
 
 /* HOVER MENU INDEX*/
 .overlay {
-  position: absolute;
-  bottom: 0;
-  background: rgb(0, 0, 0);
-  background: rgba(0, 0, 0, 0.5);
-  color: #f1f1f1;
-  width: 60%;
-  transition: .5s ease;
-  opacity:0;
-  color: white;
-  font-size: 20px;
-  padding: 20px;
-  text-align: center;
-  margin: 0;
-  left:12px;
+	position: absolute;
+	bottom: 0;
+	background: rgb(0, 0, 0);
+	background: rgba(0, 0, 0, 0.5);
+	color: #f1f1f1;
+	width: 60%;
+	transition: .5s ease;
+	opacity:0;
+	color: white;
+	font-size: 20px;
+	padding: 20px;
+	text-align: center;
+	margin: 0;
+	left:12px;
 }
 
 .container:hover .overlay {
-  opacity: 1;
-  left: 12%;
+	opacity: 1;
+	left: 12%;
 }
 
 .container {
-  position: relative;
+	position: relative;
 
 }
 
 /* LATERAL DIV INDEX */
 
 .lateraldivizq{
-    width:13%;
-    height: 500px;
+	width:13%;
+	height: 1000px;
 	background:#e6e6e6;
-    position: absolute;
+	position: absolute;
 	border-radius:8px;
-    top: 260px;
-    left: 3%;
-
+	top: 260px;
+	left: 3%;
 	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 15px;
 
 }
 
 .lateraldivdre{
-    width:13%;
-    height: 500px;
+	width:13%;
+	height: 1000px;
 	background:#e6e6e6;
-    position: absolute;
+	position: absolute;
 	border-radius:8px;
-    top: 260px;
-    left: 84%;
+	top: 260px;
+	left: 84%;
+	font-size: 15px;
 
 	font-family: 'Open Sans Condensed', sans-serif;
 }
 
 .noticias img{
-    width: 80%;
-    padding-bottom: 40px;
+	width: 80%;
+	padding-bottom: 40px;
 }
 
 .noticias b{
-    color: #3B3535;
-    width: 3em;
-    top: 200px;
-    font-family: 'Quicksand', sans-serif;
-    padding: 15px;
+	color: #3B3535;
+	width: 3em;
+	top: 200px;
+	font-family: 'Quicksand', sans-serif;
+	padding: 15px;
 }
